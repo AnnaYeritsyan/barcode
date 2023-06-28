@@ -1,2 +1,1 @@
-# barcode
-create barcode and print
+"# barcode" 

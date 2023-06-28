@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="barcode.css">
+    <link href='https://fonts.googleapis.com/css?family=Libre Barcode 39' rel='stylesheet'> 
+    <title>barcode</title>
+<body>
+  <div class="background-flex">
+
+  
+    <div class="barcode-flex">
+<div class="background_split">
+
+    <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th >Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td class="barcode">Germany<input type="button"  value ="barcode" class="bcode">
+          <input type="button" value="print" class="print">
+          </td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+         <td class="barcode">4521<input type="button"  value ="barcode" class="bcode" id="printableArea"> 
+            <input type="button" value="print" class="print"></td>
+          
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td class="barcode">1239<input type="button"  value ="barcode" class="bcode">
+            <input type="button" value="print" class="print"></td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td class="barcode">2002e<input type="button"  value ="barcode" class="bcode">
+            <input type="button" value="print" class="print"></td>
+        </tr>
+      </table>
+      <input type="button" value="printall" id="printall" class="printall">
+</div>
+
+ 
+  </div> 
+   <div class="barcode-flex modal-close" id="modal-open-close">
+    <p class="barcode-sign"></p>
+    <p class="barcode-sign"></p>
+    <p class="barcode-sign"></p>
+    <p class="barcode-sign"></p>
+   </div>
+
+   <div class="barcode1-flex modal-close" id="printallmodal">
+   <div class="print-allmodal" id="print-allmodal"></div>
+</div> 
+
+<!-- --------------------------------------------  -->
+<!-- <div >
+  <input type="file" name="myFiles[]"  id="inpFile" multiple>
+  <button id="btnUpload">upload file</button>
+</div> -->
+
+    <script src="barcode.js"></script>
+</body>
+</html>

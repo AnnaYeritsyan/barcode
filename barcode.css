@@ -1,0 +1,96 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+     .barcode-flex{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        height: 900px;
+        background-color: bisque;
+        /* border: 1px solid black; */
+     }
+     .barcode1-flex{
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      height: 900px;
+      background-color: bisque;
+      /* border: 1px solid black; */
+   }
+     .modal-close{
+      background-color: white;
+  
+     }
+
+     table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+
+    .background-flex{
+  
+      display: flex;
+      flex-direction: row;
+
+    }
+    #modal-open-close{
+      display: none;
+    }
+    #printallmodal{
+      display: none;
+      font-family: 'Libre Barcode 39';
+      font-size: 35px;
+    
+    }
+    .print-allmodal{
+       display: flex;
+      flex-direction: column;
+      height: 150px;
+      width: 210px;
+    }
+    .barcode-sign{
+     
+          /* border: 1px solid black; */
+          width: 50%;
+          height: 100px;   
+          padding: 25px;
+         font-family: 'Libre Barcode 39';
+          font-size: 35px;
+         }
+    @media print{
+      .background_split{
+        
+        visibility: hidden;
+      }
+      .barcode-flex{
+        width: 0px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding: 0px;
+      }
+      .barcode1-flex{
+        width: 0px;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        padding: 0px;
+      }
+      .barcode-sign{
+        width: 1000px;
+      }
+  
+    }
